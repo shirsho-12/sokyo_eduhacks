@@ -8,8 +8,14 @@ Forming study groups is never easy. In a room full of strangers you need to go a
 Sokyo is a learning platform built upon the pillars of communication and socializing. A user first creates an account on the platform, selects the courses they are taking for the semester and sees other users also taking the course. The user then has the option to contact the person via the app or create groups based on shared courses/interests. The app's main appeal is the ability to find study buddies in the same course. 
 
 Sokyo comes from the Proto-Indo-European word sokʷyo meaning companion.
+![App Home Page](https://github.com/shirsho-12/sokyo_eduhacks/blob/master/assets/images/home_page.jpg "App Homepage")
+
+*App Home Page*
 ## How I built it
 I built the app using Flutter, Google Firebase Authentication, and Google Cloud Firestore and followed the BLoC framework for business logic delineation. I used Firebase Auth for email and Google logins.
+![Firebase Auth](https://github.com/shirsho-12/sokyo_eduhacks/blob/master/assets/images/firebase.PNG "Firebase Authentication)
+
+*Firebase Authentication*
 ## Challenges we ran into
 Making the login backend complete was difficult. I implemented login, registration, forget password, chat, and Google Sign-In functionalities. While doing so, a lot of the business logic separation was difficult and time-consuming. In addition, creating a sleek UI was probably the hardest challenge for me. 
 I attempted to create a working chat function using Cloud Firestore but it proved to be extremely difficult as Firebase does not provide a built-in Peer-to-Peer chat function. The current chat functionality is based on local SQL storage instead. I also attempted to try this with Cloud Functions but in the end, stayed with Cloud Firestore.
