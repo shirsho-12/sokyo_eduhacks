@@ -1,5 +1,5 @@
 name: sokyo
-description: ChildCare Simplified.
+description: Class Groups Simplified.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -41,6 +41,7 @@ dependencies:
   equatable: ^2.0.5
   google_sign_in: ^5.4.2
   flex_color_scheme: ^5.1.0
+  flutter_svg: ^1.1.6
 
 dev_dependencies:
   flutter_test:
@@ -68,6 +69,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/icons/
+    - assets/images/face.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

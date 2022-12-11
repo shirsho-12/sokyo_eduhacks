@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sokyo/app_ui.dart';
 // import 'package:sokyo/constants/routes.dart';
 import 'package:sokyo/loading/loading_screen.dart';
+import 'package:sokyo/routes.dart';
 import 'package:sokyo/services/auth/bloc/auth_bloc.dart';
 import 'package:sokyo/services/auth/bloc/auth_event.dart';
 import 'package:sokyo/services/auth/bloc/auth_state.dart';
@@ -21,9 +22,10 @@ void main() {
       create: (context) => AuthBloc(FirebaseAuthProvider()),
       child: const HomePage(),
     ),
-    routes: const {
-      // createOrUpdateNoteRoute: (context) => const CreateUpdateNoteView(),
-    },
+    // routes: const {
+    //   // createOrUpdateNoteRoute: (context) => const CreateUpdateNoteView(),
+    // },
+    onGenerateRoute: RouteGenerator.generateRoute,
   ));
 }
 
