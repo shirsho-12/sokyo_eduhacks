@@ -13,7 +13,7 @@ Sokyo comes from the Proto-Indo-European word sokʷyo meaning companion.
 *App Home Page*
 ## How I built it
 I built the app using Flutter, Google Firebase Authentication, and Google Cloud Firestore and followed the BLoC framework for business logic delineation. I used Firebase Auth for email and Google logins.
-![Firebase Auth](https://github.com/shirsho-12/sokyo_eduhacks/blob/master/assets/images/firebase.PNG "Firebase Authentication)
+![Firebase Auth](https://github.com/shirsho-12/sokyo_eduhacks/blob/master/assets/images/firebase.PNG "Firebase Authentication")
 
 *Firebase Authentication*
 ## Challenges we ran into
