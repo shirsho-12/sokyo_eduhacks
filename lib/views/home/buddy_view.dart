@@ -78,7 +78,9 @@ class _BuddyViewState extends State<BuddyView> {
                       trailing: SizedBox(
                         width: width,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/chat');
+                          },
                           child: const Text('Chat'),
                         ),
                       ),

@@ -3,12 +3,15 @@ import 'package:sokyo/views/home/buddy_view.dart';
 import 'package:sokyo/views/home/groups_view.dart';
 import 'package:sokyo/views/home/home.dart';
 
+import 'views/chat/chat_page.dart';
+
 class RouteGenerator {
   static const String homePage = '/home';
   static const String groupsPage = '/groups';
   static const String coursesPage = '/courses';
   static const String profilePage = '/profile';
   static const String buddyPage = '/buddy';
+  static const String chatPage = '/chat';
 
   RouteGenerator._();
 
@@ -23,9 +26,11 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => const CoursesView());
       case profilePage:
         return MaterialPageRoute(builder: (_) => const ProfileView());
-
       case buddyPage:
         return MaterialPageRoute(builder: (_) => const BuddyView());
+      case chatPage:
+        return MaterialPageRoute(
+            builder: (_) => const ChatPage(sender: "Jane"));
 
       default:
         return MaterialPageRoute(
