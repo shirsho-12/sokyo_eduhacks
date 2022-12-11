@@ -57,27 +57,26 @@ class _LoginViewState extends State<LoginView> {
         backgroundColor: SokyoColors.p2,
         appBar: AppBar(
           title: const Text("Sokyo"),
+          centerTitle: true,
         ),
         body: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text(
-                "Sokyo!",
-                style: SokyoTextStyle.headline1
-                    .copyWith(color: SokyoColors.secondary),
-                textAlign: TextAlign.center,
+              const Image(
+                image: AssetImage('assets/images/logo_no_caption.PNG'),
+                height: 300,
               ),
-              const SizedBox(height: 20.0),
+              const SizedBox(height: 10.0),
               Text(
                 "Connect with like-minded students in your university",
                 style:
                     SokyoTextStyle.subtitle2.copyWith(color: SokyoColors.black),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 40.0),
+              const SizedBox(height: 20.0),
               TextButton(
                 onPressed: () {
                   context.read<AuthBloc>().add(const AuthEventGoogleSignIn());
@@ -110,7 +109,7 @@ class _LoginViewState extends State<LoginView> {
                   ],
                 ),
               ),
-              const SizedBox(height: 15),
+              const SizedBox(height: 10),
               Row(
                 children: [
                   Expanded(
@@ -135,7 +134,7 @@ class _LoginViewState extends State<LoginView> {
                   ),
                 ],
               ),
-              const SizedBox(height: 15.0),
+              const SizedBox(height: 10.0),
               Container(
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.grey),
@@ -168,7 +167,7 @@ class _LoginViewState extends State<LoginView> {
                   ),
                 ),
               ),
-              const SizedBox(height: 32.0),
+              const SizedBox(height: 16.0),
               ElevatedButton(
                 onPressed: () async {
                   final email = _email.text;
@@ -177,7 +176,7 @@ class _LoginViewState extends State<LoginView> {
                 },
                 child: const Text("Login"),
               ),
-              const SizedBox(height: 60.0),
+              const SizedBox(height: 16.0),
               RichText(
                 textAlign: TextAlign.center,
                 text: TextSpan(
