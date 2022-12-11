@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "606987527662",
+    "project_id": "sokyo-eduhacks",
+    "storage_bucket": "sokyo-eduhacks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606987527662:android:a27663a773682c63dd1aff",
+        "android_client_info": {
+          "package_name": "com.eduhacks.sokyo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606987527662-oo9vt164eibesa8csk7kodsa7r58ilv2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eduhacks.sokyo",
+            "certificate_hash": "842fea354b7572cbfe5cdc7e0c47f6586aad154a"
+          }
+        },
+        {
+          "client_id": "606987527662-gcacfe9d19qal5it0996vsuiqn9mnj4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANq50gHyQtOtLAafI2yHGunRgMysXqB34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606987527662-gcacfe9d19qal5it0996vsuiqn9mnj4n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "606987527662-30i3i5kmurhppqnk06cb36h8d2qblo4a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.eduhacks.sokyo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
